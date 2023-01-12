@@ -136,10 +136,9 @@ def main():
                        help="space between watermarks, default is 75")
     parse.add_argument("-a", "--angle", default=30, type=int,
                        help="rotate angle of watermarks, default is 30")
-    parse.add_argument("--font-family", default="./font/青鸟华光简琥珀.ttf", type=str,
+    parse.add_argument("--font-family", type=str,
                        help=textwrap.dedent('''\
-                       font family of text, default is './font/青鸟华光简琥珀.ttf'
-                       using font in system just by font file name
+                       font family of text,using font in system just by font file name
                        for example 'PingFang.ttc', which is default installed on macOS
                        '''))
     parse.add_argument("--font-height-crop", default="1.2", type=str,
