@@ -1,12 +1,17 @@
 # marker.py
 
-为图片添加文字水印
+为图片添加文字水印的一个Python脚本
 可设置文字**大小、颜色、旋转、间隔、透明度**
 
 # usage
 
-需要 PIL 库 `pip install Pillow`
+- 运行脚本前的操作，首先需要安装Pillow：  
+ `pip install Pillow`
 
+- 运行脚本的命令如下：  
+`python marker.py -f ./input/test.png -m Watermarker`
+
+- 更多详细请参照下面： 
 ```
 usage: marker.py [-h] [-f FILE] [-m MARK] [-o OUT] [-c COLOR] [-s SPACE] [-a ANGLE] [--font-family FONT_FAMILY] [--font-height-crop FONT_HEIGHT_CROP] [--size SIZE]
                  [--opacity OPACITY] [--quality QUALITY]
@@ -23,8 +28,7 @@ optional arguments:
   -a ANGLE, --angle ANGLE
                         rotate angle of watermarks, default is 30
   --font-family FONT_FAMILY
-                        font family of text, default is './font/青鸟华光简琥珀.ttf'
-                        using font in system just by font file name
+                        font family of text,using font in system just by font file name
                         for example 'PingFang.ttc', which is default installed on macOS
   --font-height-crop FONT_HEIGHT_CROP
                         change watermark font height crop
@@ -36,8 +40,8 @@ optional arguments:
   --quality QUALITY     quality of output images, default is 90
 ```
 
-# 效果
 
-`python marker.py -f ./input/test.png -m 添加水印`
 
-![](/output/test.png?raw=true)
+
+
+
